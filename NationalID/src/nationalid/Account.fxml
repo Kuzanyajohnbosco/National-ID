@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@delete1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nationalid.AccountController">
+   <children>
+      <TextField fx:id="username" layoutX="249.0" layoutY="130.0" promptText="enter your username" />
+      <Text layoutX="155.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+      <Text layoutX="160.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <PasswordField fx:id="pass" layoutX="249.0" layoutY="208.0" promptText="enter your password" />
+      <PasswordField fx:id="confirm" layoutX="249.0" layoutY="282.0" promptText="confirm your password" />
+      <Text layoutX="173.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm" />
+      <Text layoutX="173.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE THE USER ACCOUNT">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn" layoutX="282.0" layoutY="337.0" mnemonicParsing="false" onAction="#Register" prefHeight="37.0" prefWidth="73.0" text="CREATE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@delete1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nationalid.AddMemberController">
+   <children>
+      <TextField fx:id="memberID" layoutX="55.0" layoutY="36.0" promptText="member ID" />
+      <TextField fx:id="nrmno" layoutX="55.0" layoutY="101.0" promptText="NRM No" />
+      <TextField fx:id="sex" layoutX="55.0" layoutY="175.0" promptText="sex" />
+      <TextField fx:id="dob" layoutX="55.0" layoutY="317.0" promptText="Date of Birth" />
+      <TextField fx:id="surname" layoutX="254.0" layoutY="36.0" promptText="Surname" />
+      <TextField fx:id="othername" layoutX="254.0" layoutY="101.0" promptText="Other Name" />
+      <TextField fx:id="district" layoutX="254.0" layoutY="175.0" promptText="District" />
+      <TextField fx:id="subcounty" layoutX="55.0" layoutY="252.0" promptText="Sub-County" />
+      <TextField fx:id="parish" layoutX="254.0" layoutY="252.0" promptText="Parish" />
+      <TextField fx:id="nationalID" layoutX="430.0" layoutY="101.0" promptText="National ID" />
+      <TextField fx:id="constituency" layoutX="430.0" layoutY="175.0" promptText="Constituency" />
+      <TextField fx:id="firstname" layoutX="430.0" layoutY="36.0" promptText="First Name" />
+      <TextField fx:id="county" layoutX="437.0" layoutY="252.0" promptText="County" />
+      <TextField fx:id="village" layoutX="437.0" layoutY="317.0" promptText="Village" />
+      <Button layoutX="280.0" layoutY="342.0" mnemonicParsing="false" onAction="#AddMemberz" prefHeight="36.0" prefWidth="97.0" text="ADD MEMBER" />
+   </children>
+</AnchorPane>

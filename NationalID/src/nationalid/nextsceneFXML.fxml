@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1300.0" stylesheets="@delete1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nationalid.NextsceneFXMLController">
+   <children>
+      <TextField fx:id="fieldsearch1" layoutX="40.0" layoutY="170.0" promptText="search parish" />
+      <TableView fx:id="enterMembersTable" editable="true" layoutX="214.0" layoutY="173.0" prefHeight="471.0" prefWidth="861.0">
+        <columns>
+          <TableColumn fx:id="MEMBERIDColumn" prefWidth="89.0" text="Member ID" />
+          <TableColumn fx:id="NRMNOColumn" prefWidth="103.0" text="NRM NO" />
+            <TableColumn fx:id="SURNAMEColumn" prefWidth="120.0" text="SurName" />
+            <TableColumn fx:id="FIRSTNAMEColumn" prefWidth="120.0" text="First Name" />
+            <TableColumn fx:id="OTHERNAMEColumn" prefWidth="124.0" text="Other Names" />
+            <TableColumn fx:id="SEXColumn" prefWidth="82.0" text="Sex" />
+            <TableColumn fx:id="DOBColumn" prefWidth="103.0" text="DOB" />
+            <TableColumn fx:id="NATIONALIDColumn" prefWidth="115.0" text="National ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="16.0" layoutY="659.0" mnemonicParsing="false" onAction="#update" prefHeight="33.0" prefWidth="79.0" text="Update" />
+      <Button layoutX="1175.0" layoutY="667.0" mnemonicParsing="false" onAction="#handlePrintButton" prefHeight="33.0" prefWidth="71.0" text="XLSX File" />
+      <Button fx:id="imprt" layoutX="481.0" layoutY="667.0" mnemonicParsing="false" onAction="#onImport" prefHeight="33.0" prefWidth="71.0" text="import xls" />
+      <Button layoutX="983.0" layoutY="667.0" mnemonicParsing="false" onAction="#addmembers" prefHeight="33.0" prefWidth="113.0" text="Add New Member" />
+      <Text fill="#e9f500" layoutX="341.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NATIONAL ID FORM" textAlignment="CENTER" wrappingWidth="510.22216796875">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="1186.0" layoutY="91.0" mnemonicParsing="false" onAction="#help" prefHeight="43.0" prefWidth="79.0" text="Help" />
+      <ImageView fitHeight="148.0" fitWidth="200.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@id.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1186.0" layoutY="32.0" mnemonicParsing="false" onAction="#logout" prefHeight="43.0" prefWidth="79.0" text="Log Out" />
+      <TextField fx:id="importfield" layoutX="161.0" layoutY="667.0" prefHeight="29.0" prefWidth="149.0" promptText="import from file" />
+      <Button fx:id="browseBtn1" layoutX="343.0" layoutY="665.0" mnemonicParsing="false" onAction="#handleBrowseBtn1" prefHeight="33.0" prefWidth="79.0" text="Browse" />
+      <Button layoutX="749.0" layoutY="671.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="33.0" prefWidth="97.0" text="Delete Member" />
+      <ScrollPane layoutX="16.0" layoutY="209.0" prefHeight="427.0" prefViewportHeight="425.0" prefViewportWidth="262.0" prefWidth="188.0">
+         <content>
+            <ListView fx:id="display1" layoutX="16.0" layoutY="209.0" prefHeight="432.0" prefWidth="186.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="1060.0" layoutY="32.0" mnemonicParsing="false" onAction="#accounts" prefHeight="43.0" prefWidth="97.0" text="Account" />
+      <ScrollPane layoutX="1080.0" layoutY="208.0" prefHeight="438.0" prefViewportHeight="421.0" prefViewportWidth="206.0" prefWidth="208.0">
+         <content>
+            <ListView fx:id="display" layoutX="1080.0" layoutY="223.0" prefHeight="440.0" prefWidth="206.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="fieldsearch" layoutX="1083.0" layoutY="173.0" prefHeight="29.0" prefWidth="200.0" promptText="search village" />
+   </children>
+</AnchorPane>
